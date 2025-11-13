@@ -135,6 +135,8 @@ The training loop is started with:
 
 ```python
 trainer.fit(model, train_loader, val_loader)
+
+```
 ---
 ### 8. Evaluation
 
