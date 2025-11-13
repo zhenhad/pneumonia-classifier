@@ -4,7 +4,7 @@ This preprocessing step prepares the dataset for pneumonia classification based 
 
 ### Overview
 - **Data Source:** RSNA Chest X-ray dataset (`stage_2_train_images` and `stage_2_train_labels.csv`)
-- **Goal:** Prepare the data for a binary classification task — *Normal (0)* vs. *Pneumonia (1)*
+- **Goal:** Prepare the data for a binary classification task, *Normal (0)* vs. *Pneumonia (1)*
 
 ### Steps Performed
 1. **Load and clean labels**  
