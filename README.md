@@ -135,3 +135,20 @@ The training loop is started with:
 
 ```python
 trainer.fit(model, train_loader, val_loader)
+---
+### 8. Evaluation
+
+After training is complete:
+
+- The best checkpoint is loaded back into `PneumoniaModel`.
+- Predictions and ground-truth labels are collected over the validation set.
+- Evaluation metrics are computed using `torchmetrics`, including:
+  - **Accuracy**
+  - **Precision**
+  - **Recall**
+  - **Confusion Matrix** at:
+    - Threshold **0.5** (default)
+    - Threshold **0.3** (for sensitivity analysis)
+
+These evaluation results provide a clear view of how well the model distinguishes between normal and pneumonia chest X-ray images.
+
